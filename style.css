@@ -10,6 +10,7 @@
   flex-direction: row;
   justify-content: space-between;
   align-content: center;
+  margin-bottom: 4rem;
 }
 
 .cart {
@@ -25,12 +26,23 @@
   right: 0rem;
 }
 
-
-.shop{
-     display: grid;
-     grid-template-columns: repeat(4, 1fr);
- 
+.shop {
+  display: grid;
+  grid-template-columns: repeat(3, 380px);
+  gap: 20px;
+  justify-content: space-around;
+  margin: 5px 15px;
 }
-.item{
-     border: 10px,solid, blue;
+.item {
+  box-shadow: 5px 5px 10px gray;
+  background-color: rgb(214, 220, 224);
+  padding: 10px 15px;
+}
+.item > img {
+  width: 380px;
+  height: 380px;
+}
+
+.buttons{
+     display: flex;
 }
