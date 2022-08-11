@@ -1,3 +1,36 @@
 /* 
-!uy
+! navbar style
 */
+
+.navbar {
+  background-color: rgb(1, 17, 19);
+  color: white;
+  padding: 10px 40px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-content: center;
+}
+
+.cart {
+  position: relative;
+  font-size: 20px;
+}
+.cartAmount {
+  background-color: aquamarine;
+  color: black;
+  border-radius: 3rem;
+  position: absolute;
+  top: 10px;
+  right: 0rem;
+}
+
+
+.shop{
+     display: grid;
+     grid-template-columns: repeat(4, 1fr);
+ 
+}
+.item{
+     border: 10px,solid, blue;
+}
