@@ -3,6 +3,16 @@
 */
 
 let shop  =document.getElementById('shop');
+
+const increment =()=>{
+     
+}
+const decrement =()=>{
+
+}
+const update =()=>{
+
+}
 let shopData = [
      {
           id:"1",
@@ -51,9 +61,9 @@ return shop.innerHTML =  shopData.map((list)=>{
              <div class="price_quantity">
                <h2>${list.price}</h2>
                <div class="buttons">
-                 <p>-</p>
-                 <div id=&{list.id} class="quantity">0</div>
-                 <p>+</p>
+                 <p>  <i class="bi bi-dash-circle-dotted"></i> </p>
+                 <div id=&{list.id} class="quantity"> 0 </div>
+                 <p>  <i class="bi bi-plus-circle-dotted"></i></p>
                </div>
              </div>
            </div>
