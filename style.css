@@ -39,8 +39,8 @@
   padding: 10px 15px;
 }
 .item > img {
-  width: 380px;
-  height: 380px;
+  width: 22rem;
+  height: 20rem;
 }
 
 .buttons{
@@ -52,3 +52,13 @@
   justify-content: space-between;
   align-items: center;
 }
+
+/* responsive 
+ */
+
+ @media (max-width:1000px) {
+  .shop{
+    grid-template-columns:repeat (2,1fr);
+ 
+  }
+ }
