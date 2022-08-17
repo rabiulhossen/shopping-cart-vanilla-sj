@@ -5,12 +5,12 @@
 .navbar {
   background-color: rgb(1, 17, 19);
   color: white;
-  padding: 10px 40px;
+  padding: 5px 40px;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-content: center;
-  margin-bottom: 4rem;
+  margin-bottom: 3rem;
 }
 
 .cart {
@@ -19,7 +19,7 @@
 }
 .cartAmount {
   background-color: aquamarine;
-  color: black;
+  color: rgb(8, 19, 34);
   border-radius: 3rem;
   position: absolute;
   top: 10px;
@@ -45,4 +45,10 @@
 
 .buttons{
      display: flex;
+}
+
+.price_quantity{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
