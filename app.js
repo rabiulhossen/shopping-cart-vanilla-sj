@@ -1,14 +1,14 @@
 /* 
-* variable declare
+* ? variable declare
 */
 
 let shop  =document.getElementById('shop');
 
 const increment =()=>{
-     
+     console.log("plus")
 }
 const decrement =()=>{
-
+console.log("minus")
 }
 const update =()=>{
 
@@ -46,7 +46,27 @@ let shopData = [
           img:"./gadget-4.jpg"
 
      },
+     {
+          id:"4",
+          name:"dive camera",
+          price:45,
+          desc:" Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eius, qui.",
+          img:"./gadget-4.jpg"
+
+     },
+     {
+          id:"4",
+          name:"dive camera",
+          price:45,
+          desc:"This is awesome camara for deep divers",
+          img:"./gadget-4.jpg"
+
+     },
 ]
+
+let basket = [];
+
+
 
 const generateShp =()=> {
 return shop.innerHTML =  shopData.map((list)=>{
@@ -61,9 +81,9 @@ return shop.innerHTML =  shopData.map((list)=>{
              <div class="price_quantity">
                <h2>${list.price}</h2>
                <div class="buttons">
-                 <p>  <i class="bi bi-dash-circle-dotted"></i> </p>
+                 <p>  <i class="bi bi-dash-circle-dotted" onClick="decrement()"></i> </p>
                  <div id=&{list.id} class="quantity"> 0 </div>
-                 <p>  <i class="bi bi-plus-circle-dotted"></i></p>
+                 <p onClick="increment()">  <i class="bi bi-plus-circle-dotted"></i></p>
                </div>
              </div>
            </div>
@@ -72,4 +92,5 @@ return shop.innerHTML =  shopData.map((list)=>{
    `;
 }).join('')
 }
+
 generateShp()
